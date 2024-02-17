@@ -1,4 +1,5 @@
 # KorepiLicenseGenerater
+This program generates a txt file containing the license based on the excel file from the seller panel.
 ## How to use command.py
 1. Install [python](https://www.python.org/downloads/)
 2. Download zip
@@ -8,7 +9,7 @@
 
 P.S. You can get information to run `python command.py -h` this command
 
-## How to use License_txt_generator.ipynb
+## How to use License_txt_generator.ipynb(No installation)
 1. Open this in [colab](https://colab.research.google.com)
 2. Press this button to attach google drive ![DA41D442-17CD-4B1C-A08A-DDDF2D89FC8F](https://github.com/CureSaba/KorepiLicenseGenerater/assets/94890302/813ba52e-bb0c-4a8e-9704-706f9cba4ab2)
 3. Put the excel file in a suitable folder in google drive
