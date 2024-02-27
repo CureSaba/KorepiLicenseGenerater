@@ -15,6 +15,7 @@ class genetate():
         self.threemonths=-1
         self.sixmonths=-1
         self.oneday=-1
+        self.unknown=-1
     def filetype(self, money):
         money=float(money)
         if money==0.5:
@@ -38,6 +39,9 @@ class genetate():
         if money==35:
             self.oneyear+=1
             return "oneyear", self.oneyear
+        else:
+            self.unknown+=1
+            return "unknown", self.unknown
     def main(self):
         json_data=self.json_data
         for i in zip(json_data[list(json_data)[3]].values(),json_data[list(json_data)[2]].values()):
