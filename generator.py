@@ -8,7 +8,7 @@ class genetate():
     def __init__(self, filename="a.xlsx"):
         self.df = pd.read_excel(filename)
         self.json_data = json.loads(self.df.to_json())
-        self.hour=-1
+        self.onehour=-1
         self.oneday=-1
         self.oneweek=-1
         self.onemonth=-1
