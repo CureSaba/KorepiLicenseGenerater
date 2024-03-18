@@ -27,7 +27,7 @@ class genetate():
         if money==3:
             self.oneweek+=1
             return "oneweek", self.oneweek
-        if money==5:
+        if money==5 or 10:
             self.onemonth+=1
             return "onemonths", self.onemonth
         if money==13:
