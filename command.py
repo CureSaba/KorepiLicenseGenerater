@@ -13,5 +13,5 @@ if args.install:
         subprocess.check_call('python3 -m pip install -r requirments.txt', shell=True)
     except:
         print("pip install failed")
-ins=generator.genetate(args.FileName)
+ins=generator.generate(args.FileName)
 ins.main()
