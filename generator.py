@@ -6,7 +6,7 @@ import pandas as pd
 import json
 
 
-class genetate:
+class generate:
     def __init__(self, filename="a.xlsx"):
         self.df = pd.read_excel(filename)
         self.json_data = json.loads(self.df.to_json())
@@ -63,5 +63,5 @@ class genetate:
 
 if __name__ == "__main__":
     filename = input("ExcelFileName: ")
-    a = genetate("a.xlsx" if filename == "" else filename)
+    a = generate("a.xlsx" if filename == "" else filename)
     a.main()
