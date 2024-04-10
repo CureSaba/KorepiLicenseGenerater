@@ -16,7 +16,7 @@ class generate:
         self.onemonth = -1
         self.threemonths = -1
         self.sixmonths = -1
-        self.oneday = -1
+        self.oneyear = -1
         self.unknown = -1
 
     def filetype(self, money):
