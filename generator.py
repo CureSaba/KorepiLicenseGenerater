@@ -4,6 +4,7 @@ pip install -r requirments.txt
 
 import pandas as pd
 import json
+import os
 
 
 class generate:
@@ -54,9 +55,13 @@ class generate:
         ):
             print(i)
             filetype = self.filetype(float(i[1]))
-            with open(f"{filetype[0]}{filetype[1]}.txt", mode="x") as f:
-                f.write(i[0])
-                f.close()
+            filename = f"{filetype[0]}{filetype[1]}.txt"
+            if filename in os.listdir("end/") or filename in os.listdir("onstore/"):
+                pass
+            else:
+                with open(f"{filetype[0]}{filetype[1]}.txt", mode="x") as f:
+                    f.write(i[0])
+                    f.close()
         # print(a)
         print("Task Completed")
 
